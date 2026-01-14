@@ -94,7 +94,7 @@ if uploaded_file is not None:
 
     # C) REMOVE DUPLICATES
     with col3:
-        if st.button("Remove Duplicate Records"):
+        if st.button("🔩 Remove Duplicate Records"):
             st.session_state.data = data.drop_duplicates()
             st.success("✅ Duplicate records removed")
 
@@ -120,4 +120,5 @@ if uploaded_file is not None:
     )
 
 else:
+
     st.info(" Please upload a CSV or Excel file to begin")
